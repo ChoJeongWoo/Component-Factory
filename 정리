@@ -1,0 +1,51 @@
+
+Headless UI 개발 목표
+
+Headless UI란
+- 컴포넌트의 별도 UI를 제공하지 않고, '동작'에 대한 기능만 제공해주는 라이브러리
+- 프로젝트 컨셉에 맞게 유동적으로 스타일을 적용할 수 있음
+
+- 단기 목표
+  - 프로젝트 가칭 Component Factory
+  - 기한 7월 말
+
+  - 작은 컴포넌트
+    - Table, Select, Input, Radio, File, Pagination
+    - 컴포넌트의 메인, 상세 
+
+  - global admin 일부 구현
+    - ifhome 제휴처 관리?
+
+--------------------------------------------
+
+Technology Stack
+
+FrontEnd - Typescript, React, TailwindCSS
+Bundler - Vite
+Code Formatter - Prettier
+Package Manager - Npm
+
+--------------------------------------------
+
+Style
+
+max-width - 1280
+
+
+- 메인 화면
+  - 컴포넌트를 카드 컴포넌트로 표현
+  - 클릭하면 상세 화면으로 라우팅
+  - 카드 = 메뉴
+
+- 상세 화면
+  - 컴포넌트의 상세 화면
+  - 컴포넌트, 규격서, 가능하면 코드
+  - LNB
+
+--------------------------------------------
+
+TODO
+1. Atomic Design 기반으로 컴포넌트 스펙트럼 정리 화면
+2. About Page
+3. Logo
+4. 추가 컴포넌트 개발

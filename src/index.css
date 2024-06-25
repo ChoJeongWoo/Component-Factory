@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --width-7xl: 80rem;
+}
+
+/* 글로벌 스타일 설정 */
+@layer base {
+  body {
+    @apply text-white;
+  }
+}
