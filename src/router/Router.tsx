@@ -2,9 +2,10 @@ import React, { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const App = React.lazy(() => import("@/App"));
-const Input  = React.lazy(() => import("@/shared/components/Input"))
+const Input = React.lazy(() => import("@/shared/components/Input"));
 const Select = React.lazy(() => import("@/pages/Select"));
 const RadioGroup = React.lazy(() => import("@/shared/components/RadioGroup"));
+const File = React.lazy(() => import("@/shared/components/File"));
 
 const router = createBrowserRouter([
   {
@@ -16,17 +17,27 @@ const router = createBrowserRouter([
     element: <Select />,
   },
   {
-    path: "/Input",
+    path: "/input",
     element: (
-      <Input
-        type={"numeric"}
-        maxlength={"5"}
-        placeholder={"내용을 입력하세요"}
-      />
+      <div>
+        <h>등록 시</h>
+        <Input
+          type={"numeric"}
+          maxlength={"5"}
+          placeholder={"내용을 입력하세요"}
+        />
+        <h><br />수정 시</h>
+        <Input
+          type={"text"}
+          maxlength={"5"}
+          placeholder={"내용을 입력하세요"}
+          modelValue={"test"}
+        />
+      </div>
     ),
   },
   {
-    path: "/RadioGroup",
+    path: "/radioGroup",
     element: (
       <RadioGroup
         modelValue={0}
@@ -38,6 +49,10 @@ const router = createBrowserRouter([
         ]}
       />
     ),
+  },
+  {
+    path: "/file",
+    element: <File />,
   },
 ]);
 

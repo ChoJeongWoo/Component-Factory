@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 interface Type {
   props: {
+    modelValue?: string;
     placeholder?: string;
     type?: string;
     maxlength?: number;
@@ -10,7 +11,7 @@ interface Type {
 }
 
 const Input = (props) => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState(props.modelValue);
 
   const onInput = (e) => {
     let v = e.target.value;
