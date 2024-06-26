@@ -1,5 +1,5 @@
 import Header from "@/shared/components/Header";
-import Main from "@/shared/components/Main";
+import Main from "@/pages/Main";
 
 function App() {
   return (

@@ -2,8 +2,8 @@ import React, { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const App = React.lazy(() => import("@/App"));
-const Form = React.lazy(() => import("@/shared/pages/form/Form"));
 const Input  = React.lazy(() => import("@/shared/components/Input"))
+const Select = React.lazy(() => import("@/pages/Select"));
 
 const router = createBrowserRouter([
   {
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/forms",
-    element: <Form />,
+    path: "/select",
+    element: <Select />,
   },
   {
     path: "/Input",
