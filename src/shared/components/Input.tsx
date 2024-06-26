@@ -88,18 +88,3 @@ const Input = (props) => {
 };
 
 export default Input;
-
-/**
- * props
- * 1. type
- * (float : 실수
- * numeric : 정수
- * text : 모든 문자
- * alpha : 알파벳
- * alphaNumeric : 알파벳 + 숫자
- * alphaHangul: 알파벳 + 한글
- * positiveNumeric: 양수
- * alphaDash: 알파벳 + '-’)
- * 2. maxlength
- * 3. placeholder
- */
