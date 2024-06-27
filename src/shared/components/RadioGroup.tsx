@@ -40,7 +40,7 @@ const RadioGroup = (props) => {
               disabled={props.disabled}
             />
             <label
-              className="pl-6 mr-[6px] text-[16px] flex items-center cursor-pointer [word-break:keep-all] before:flex-shrink-0 before:bg-[url('~@/assets/images/btn/btn_icon_radio.png')_no-repeat_0_0] before:[background-size:100%] label-checked:text-[#333]"
+              className="pl-6 mr-[6px] text-[16px] flex items-center cursor-pointer [word-break:keep-all] before:flex-shrink-0 before:[background-size:100%] label-checked:text-[#333]"
               htmlFor={`${props.id}_${idx}`}
             >
               {item.label}
