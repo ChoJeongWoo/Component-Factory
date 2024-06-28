@@ -1,17 +1,8 @@
-import Header from "@/shared/components/Header";
 import Main from "@/pages/Main";
 
 function App() {
   return (
-    <div className="relative">
-      <Header />
-
-      {/* <div className="mx-auto flex max-w-7xl items-center justify-between py-6 text-sm">
-        <div className="rounded-full bg-white/15 py-1 px-2 font-light ">
-          v.0.0.1
-        </div>
-      </div> */}
-
+    <>
       <Main />
 
       <div
@@ -22,13 +13,9 @@ function App() {
           <div className="flex-1 border-x border-white/[7.5%]"></div>
           <div className="hidden flex-1 border-x border-white/[7.5%] sm:block"></div>
           <div className="hidden flex-1 border-x border-white/[7.5%] lg:block"></div>
-
-          {/* <div className="flex-1 border-x border-white"></div>
-          <div className="hidden flex-1 border-x border-white sm:block"></div>
-          <div className="hidden flex-1 border-x border-white lg:block"></div> */}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

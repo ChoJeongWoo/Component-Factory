@@ -1,6 +1,5 @@
 import React from "react";
 
-import Test from "@/shared/components/card/Test";
 import Input from "@/shared/components/Input";
 import Select from "@/shared/components/Select";
 import RadioGroup from "@/shared/components/RadioGroup";
@@ -14,9 +13,13 @@ export interface RouterLink {
 }
 
 export const ROUTER_LINKS: RouterLink[] = [
-  { name: "home", path: "/", title: "Home", component: Test },
   { name: "input", path: "/input", title: "Input", component: Input },
   { name: "select", path: "/select", title: "Select", component: Select },
-  { name: "radioGroup", path: "/radioGroup", title: "RadioGroup", component: RadioGroup },
+  {
+    name: "radioGroup",
+    path: "/radioGroup",
+    title: "RadioGroup",
+    component: RadioGroup,
+  },
   { name: "file", path: "/file", title: "File", component: File },
 ];

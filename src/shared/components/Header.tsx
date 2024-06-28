@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="relative px-4 sm:px-6">
+    <header className="relative">
       <div className="flex items-center justify-between mx-auto max-w-7xl px-2 py-6">
-        <div>ComFact</div>
+        <Link to="/">ComFact</Link>
         <Link to="https://github.com/signup">
           <svg
             height="32"

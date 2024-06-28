@@ -17,13 +17,13 @@ input[type="radio"]:checked + label::before {
   background-position: 0 -24px;
 }
 
-input[type='radio']:disabled + label {
+input[type="radio"]:disabled + label {
   color: #999999;
 }
-input[type='radio']:disabled + label::before {
+input[type="radio"]:disabled + label::before {
   background-position: 0 0;
 }
-input[type='radio']:disabled:checked + label::before {
-  background: url('./assets/images/btn/btn_icon_radio_disabled.png');
+input[type="radio"]:disabled:checked + label::before {
+  background: url("./assets/images/btn/btn_icon_radio_disabled.png");
   background-size: contain;
 }

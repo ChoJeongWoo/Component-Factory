@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { ROUTER_LINKS } from "@/router/list-routes";
-
 import React from "react";
+import { Link } from "react-router-dom";
+
+import { ROUTER_LINKS } from "@/router/list-routes";
 
 const Card = () => {
   return (
@@ -31,7 +31,6 @@ const Main = () => {
         <div className="pointer-events-none absolute -inset-x-4 grid h-full grid-cols-1 gap-y-6 sm:-inset-x-6 sm:grid-cols-2 lg:grid-cols-3">
           {ROUTER_LINKS.map((link) => (
             <div className="relative h-64 sm:block lg:block" key={link.path}>
-              {/* <div className="absolute inset-x-0 -inset-y-[calc(0.5rem+1px)] border-y border-white text-white"></div> */}
               <div className="absolute inset-x-0 -inset-y-[calc(0.5rem+1px)] border-y border-white/[7.5%]  text-white"></div>
             </div>
           ))}
