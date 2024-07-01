@@ -1,15 +1,15 @@
 import React, { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+const Layout = React.lazy(() => import("@/shared/layout/Layout"));
+const DetailLayout = React.lazy(() => import("@/shared/layout/DetailLayout"));
+
 const App = React.lazy(() => import("@/App"));
-// const Select = React.lazy(() => import("@/pages/Select"));
+const Select = React.lazy(() => import("@/pages/Select"));
 
 const Input = React.lazy(() => import("@/shared/components/Input"));
 const RadioGroup = React.lazy(() => import("@/shared/components/RadioGroup"));
 const File = React.lazy(() => import("@/shared/components/File"));
-
-import Layout from "@/shared/layout/Layout";
-import DetailLayout from "@/shared/layout/DetailLayout";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "select",
-        // element: <Select />,
+        element: <Select />,
       },
       {
         path: "/input",

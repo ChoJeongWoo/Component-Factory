@@ -11,6 +11,11 @@
   body {
     @apply text-white;
   }
+
+  .sandpack-container {
+    @apply h-auto !important;
+    @apply max-h-160;
+  }
 }
 
 input[type="radio"]:checked + label::before {

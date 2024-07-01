@@ -6,6 +6,9 @@ export default {
       maxWidth: {
         "7xl-plus": "calc(var(--width-7xl) + 2px)",
       },
+      maxHeight: {
+        160: "40rem",
+      },
     },
   },
   variants: {},

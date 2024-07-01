@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="relative">
       <div className="flex items-center justify-between mx-auto max-w-7xl px-2 py-6">

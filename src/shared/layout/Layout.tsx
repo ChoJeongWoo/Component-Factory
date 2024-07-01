@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import Header from "@/shared/components/Header";
 
-function Layout() {
+const Layout: React.FC = () => {
   return (
     <div className="relative px-4 sm:px-6">
       <Header />
@@ -12,6 +12,6 @@ function Layout() {
       </footer>
     </div>
   );
-}
+};
 
 export default Layout;
